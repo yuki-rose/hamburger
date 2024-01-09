@@ -5,8 +5,8 @@ $color--brown1: #3c2a10;
 $color--brown2: #3c2b1c;
 
 //mixin
-$tablet: 834px;
-$pc: 1920px;
+$tablet: 590px;
+$pc: 960px;
 
 @mixin breakpoint-tablet {
     @media (min-wigth: ($tablet)) {
