@@ -1,6 +1,14 @@
+@use "../foundation/base";
+
+
 .l-header {
     height: 215px;
     background-color: #fff7ef;
+
+    @include base.breakpoint-tablet {
+        height: 217px;
+        background-color: #707070;
+    }
 
     &__ttl {
         height: 47px;
