@@ -1,15 +1,21 @@
+//variables
+$color--white: #ffffff;
+$color--gray: #707070;
+$color--brown: #3c2a10;
+$color-darkbrown:#3c2a1c;
+
 //mixin
 $tablet: 590px;
 $pc: 960px;
 
-@mixin breakpoint-tablet {
-    @media (min-wigth: ($tablet)) {
+@mixin breakpointTablet {
+    @media (min-width: ($tablet)) {
         @content ;
     }
 }
 
-@mixin breakpoint-pc {
-    @media (min-wigth: ($pc)) {
+@mixin breakpointPc {
+    @media (min-width: ($pc)) {
         @content ;
     }
 }

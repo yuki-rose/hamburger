@@ -5,18 +5,22 @@
     height: 215px;
     background-color: #fff7ef;
 
-    @include base.breakpoint-tablet {
-        height: 217px;
-        background-color: #707070;
+    @include base.breakpointTablet {
+    height: 217px;
     }
 
     &__ttl {
         height: 47px;
-        color: #707070;
+        color: base.$color--gray;
         font-size: 4rem;
         display: flex;
         justify-content: center;
         margin-top: 12px;
+        font-weight: 700;
+
+        @include base.breakpointTablet {
+            margin-top: -20px;
+        }
     }
 }
 
@@ -31,7 +35,15 @@
         margin-right: 8px;
         font-size: 2rem;
         font-weight: 700;
-        color: #707070;
+        color: base.$color--gray;
+
+        @include base.breakpointTablet {
+            width: 87px;
+            height: 40px;
+            margin-top: 20px;
+            margin-right: 25px;
+            font-size: 3.4rem;
+        }
     }
 }
 
@@ -44,23 +56,36 @@
     margin-top: 40px;
     box-sizing: border-box;
 
+    @include base.breakpointTablet {
+        width: 546px;
+    }
+
     &__input {
         width: 216px;
         height: 46px;
         border-radius: 10px;
-        border: 1px solid #707070;
+        border: 1px solid base.$color--gray;
         margin-right: 16px;
-        background-color: white;
+        background-color: base.$color--white;
+
+        @include base.breakpointTablet {
+            width: 396px;
+            margin-right: 14px;
+        }
     }
 
     &__set {
         width: 90px;
         height: 46px;
         border-radius: 10px;
-        border: 1px solid #707070;
+        border: 1px solid base.$color--gray;
         background-color: #ebe6e2;
         font-size: 1.6rem;
         font-weight: 700;
-        color: #707070;
+        color: base.$color--gray;
+
+        @include base.breakpointTablet {
+            width: 136px;            
+        }
     }
 }

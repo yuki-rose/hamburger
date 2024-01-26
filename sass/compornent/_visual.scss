@@ -1,3 +1,5 @@
+@use "../foundation/base";
+
 .l-main__mainvisual {
     height: 285px;
     width: 100%;
@@ -11,10 +13,16 @@
 }
 
 .l-main__ttl {
-    color: #ffffff;
+    color: base.$color--white;
     font-size: 3.6rem;
     font-weight: 700;
     position: absolute;
     top: 122px;
     left: 25px;
+
+    @include base.breakpointTablet {
+        position: absolute;
+        top: 122px;
+        left: 86px;
+    }
 }
