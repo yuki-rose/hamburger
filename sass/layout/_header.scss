@@ -9,6 +9,11 @@
     height: 217px;
     }
 
+    @include base.breakpointPc {
+        height: 220px;
+        width: 80%;
+    }
+
     &__ttl {
         height: 47px;
         color: base.$color--gray;
@@ -20,6 +25,14 @@
 
         @include base.breakpointTablet {
             margin-top: -20px;
+        }
+
+        @include base.breakpointPc {
+            height: 75px;
+            font-size: 6.4rem;
+            justify-content: space-between;
+            padding-top: 66px;
+            margin-left: 65px;
         }
     }
 }
@@ -44,6 +57,16 @@
             margin-right: 25px;
             font-size: 3.4rem;
         }
+
+        @include base.breakpointPc {
+            margin-top: 84px;
+            margin-left: 2vw;
+            margin-bottom: 90px;
+        }
+    }
+
+    @include base.breakpointPc {
+        display: none;
     }
 }
 
@@ -58,7 +81,16 @@
 
     @include base.breakpointTablet {
         width: 546px;
+        justify-content: center;
     }
+
+    @include base.breakpointPc {
+        width: 28vw;
+        margin: auto;
+        justify-content: space-between;
+        margin-right: 1.6vw;
+        margin-top: 20px;
+        }
 
     &__input {
         width: 216px;
@@ -69,7 +101,7 @@
         background-color: base.$color--white;
 
         @include base.breakpointTablet {
-            width: 396px;
+            width: 20vw;
             margin-right: 14px;
         }
     }
@@ -85,7 +117,7 @@
         color: base.$color--gray;
 
         @include base.breakpointTablet {
-            width: 136px;            
+            width: 7vw;            
         }
     }
 }

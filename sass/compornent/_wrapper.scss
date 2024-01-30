@@ -1,3 +1,5 @@
+@use "../foundation/base";
+
 .l-main__wrapperGrid {
     display: grid;
     gap: 20px;
@@ -5,16 +7,50 @@
     margin: 20px;
     margin-bottom: 49px;
     
+    @include base.breakpointTablet {
+        margin: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 41px;
+    }
+
+    @include base.breakpointPc {
+        width: 80%;
+        height: 1215px;
+        gap: 0;
+        margin: 6vw;
+        margin-top: 120px;
+        margin-bottom: 130px;
+        padding-right: 6vw;
+    }
+
     &-item {
         height: 643px;
         object-fit: cover;
         text-align: center;
         position: relative;
 
+        @include base.breakpointTablet {
+            height: 681px;
+            width: 357px;
+        }
+
+        @include base.breakpointPc {
+            height: 1197px;
+            width: 32vw;
+        }
+
         img {
             width: 100%;
             height: 642px;
             object-fit: cover;
+
+            @include base.breakpointTablet {
+                height: 681px;
+            }
+
+            @include base.breakpointPc {
+                height: 1197px;
+            }
         }
     }
 
@@ -26,12 +62,36 @@
         top: 13px;
         left: 15px;
 
+        @include base.breakpointTablet {
+            font-size: 4.4rem;
+            position: absolute;
+            top: 14px;
+            left: 11px;
+        }
+
+        @include base.breakpointPc {
+            font-size: 8.0rem;
+            position: absolute;
+            top: 24px;
+        }
+
         &::after {
             content: "";
             height: 4px;
             width: 33.89px;
             background-color: #ffffff;
             display: block;
+
+            @include base.breakpointTablet {
+                width: 35.94px;
+                margin-top: 8.57px;
+                margin-left: 4.12px;
+            }
+
+            @include base.breakpointPc {
+                width: 63px;
+                margin-left: 7.5px;
+            }
         }
     }
 
@@ -39,6 +99,17 @@
         position: absolute;
         top: 298px;
         left: 16px;
+
+        @include base.breakpointTablet {
+            position: absolute;
+            top: 341px;
+        }
+
+        @include base.breakpointPc {
+            position: absolute;
+            top: 824px;
+            left: 12px;
+        }
     }
 
     &-txtbox {
@@ -48,18 +119,53 @@
         text-align: left;
         padding: 16px;
         margin-bottom: 16px;
+
+        @include base.breakpointTablet {
+            width: 325px;
+            height: 154px;
+            padding-right: 15px;
+        }
+
+        @include base.breakpointPc {
+            padding: 1vw;
+            padding-bottom: 14px;
+            width: 30.5vw;
+            height: 166px;
+            margin-bottom: 21px;
+        }
     }
 
     &-txt {
         color: #3c2a10;
         font-size: 1.6rem;
         font-weight: 400;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
         
+        @include base.breakpointTablet {
+            font-size: 1.4rem;
+        }
+
+        @include base.breakpointPc {
+            font-size: 1.6rem;
+        }
+
         &__ttl {
             color: #3c2a10;
             font-size: 2.2rem;
             font-weight: 700;
             margin-top: -5px;
+
+            @include base.breakpointTablet {
+                font-size: 2.4rem;
+                margin-bottom: 16px;
+            }
+
+            @include base.breakpointPc {
+                margin-bottom: 10px;
+            }
         }
     }
 }

@@ -1,0 +1,36 @@
+@use "../foundation/base";
+
+.l-side {
+    display: none;
+
+    @include base.breakpointPc {
+        display: initial;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 2843px;
+        background-color: #f2ede9;
+        color: base.$color--gray;
+    }
+}
+
+.menuList {
+    margin-left: 2vw;
+}
+
+.mainMenu {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 35.64px;
+    margin-bottom: 32px;
+    margin-top: 48px;
+}
+
+.menuItem {
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 29.7px;
+    margin-bottom: 20px;
+    margin-left: 1vw;
+}
