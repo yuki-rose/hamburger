@@ -1,11 +1,31 @@
 @use "../foundation/base";
 
 .l-side {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 87vw;
+    height: 2716px;
+    background-color: #f2ede9;
+    color: base.$color--gray;
+    z-index: -1;
+    transition-duration: 300ms;
+
+    &.is-open {
+        z-index: 5;
+        position: absolute;
+        left: auto;
+        right: 0;
+    }
+
+    @include base.breakpointTablet {
+        height: 1826px;
+        width: 44vw;
+    }
 
     @include base.breakpointPc {
-        display: initial;
         position: absolute;
+        left: auto;
         top: 0;
         right: 0;
         width: 20%;
@@ -16,21 +36,56 @@
 }
 
 .menuList {
-    margin-left: 2vw;
+    margin-left: 12vw;
+    margin-top: 118px;
+
+    @include base.breakpointTablet {
+        margin-left: 5vw;
+        margin-top: 178px;
+    }
+
+    @include base.breakpointPc {
+        margin-left: 2vw;
+        margin-top: 118px;
+    }
+    
 }
 
 .mainMenu {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 35.64px;
-    margin-bottom: 32px;
-    margin-top: 48px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+
+    @include base.breakpointTablet {
+        margin-bottom: 32px;
+        margin-top: 48px;
+    }
+    
 }
 
 .menuItem {
     font-size: 2.0rem;
     font-weight: 400;
     line-height: 29.7px;
+    margin-left: 5vw;
     margin-bottom: 20px;
-    margin-left: 1vw;
+
+    @include base.breakpointTablet {
+        margin-left: 2vw;
+    }
+
+    @include base.breakpointPc {
+        margin-left: 1vw;
+    }
+    
+}
+
+.p-menu__btn-pc {
+    display: none;
+
+    @include base.breakpointPc {
+        display: inherit;
+    }
 }

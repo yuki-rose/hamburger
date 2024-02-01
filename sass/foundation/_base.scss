@@ -22,16 +22,19 @@ $pc: 960px;
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
     min-width: 320px;
     width: 100%;
+    height: 100%;
     margin: 0;
     background: #ffffff;
     font-family: 'M PLUS 1p', sans-serif;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 img {
