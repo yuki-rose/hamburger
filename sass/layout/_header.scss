@@ -98,6 +98,8 @@
         border: 1px solid base.$color--gray;
         margin-right: 16px;
         background-color: base.$color--white;
+        padding-left: 10px;
+        padding-right: 10px;
 
         @include base.breakpointTablet {
             width: 20vw;

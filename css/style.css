@@ -140,6 +140,8 @@ a {
   border: 1px solid #707070;
   margin-right: 16px;
   background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 590px) {
   .p-search__input {
@@ -218,7 +220,6 @@ a {
   gap: 20px;
   grid-template-columns: 1fr;
   margin: 20px;
-  margin-bottom: 49px;
 }
 @media (min-width: 590px) {
   .l-main__wrapperGrid {
@@ -239,7 +240,7 @@ a {
   }
 }
 .l-main__wrapperGrid-item {
-  height: 643px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
@@ -258,6 +259,7 @@ a {
   }
 }
 .l-main__wrapperGrid-item img {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -317,7 +319,7 @@ a {
 }
 .l-main__wrapperGrid-txtboxset {
   position: absolute;
-  top: 298px;
+  bottom: 16px;
   left: 16px;
 }
 @media (min-width: 590px) {
@@ -334,12 +336,12 @@ a {
   }
 }
 .l-main__wrapperGrid-txtbox {
-  width: 303px;
-  height: 156px;
+  width: calc(100% - 16px);
+  height: auto;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: left;
   padding: 16px;
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 @media (min-width: 590px) {
   .l-main__wrapperGrid-txtbox {
@@ -361,10 +363,6 @@ a {
   color: #3c2a10;
   font-size: 1.6rem;
   font-weight: 400;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
 }
 @media (min-width: 590px) {
   .l-main__wrapperGrid-txt {
@@ -381,6 +379,7 @@ a {
   font-size: 2.2rem;
   font-weight: 700;
   margin-top: -5px;
+  margin-bottom: 8px;
 }
 @media (min-width: 590px) {
   .l-main__wrapperGrid-txt__ttl {
@@ -396,7 +395,7 @@ a {
 
 .l-main__map {
   width: 100%;
-  height: 691px;
+  height: 100%;
   position: relative;
 }
 @media (min-width: 590px) {
@@ -417,7 +416,7 @@ a {
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 415px;
+  height: 60%;
   background-color: black;
   opacity: 0.2855;
 }
@@ -428,7 +427,6 @@ a {
   }
 }
 .l-main__map-img {
-  height: 691px;
   width: 100%;
   -o-object-position: center;
      object-position: center;
@@ -450,7 +448,6 @@ a {
   font-size: 3rem;
   font-weight: 700;
   color: #ffffff;
-  margin-top: 42px;
   width: 240px;
   height: 45px;
 }
@@ -481,12 +478,8 @@ a {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 33px;
-  height: 518px;
+  height: auto;
   margin-top: 29px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 16;
 }
 @media (min-width: 590px) {
   .l-main__map-txt {
@@ -506,12 +499,11 @@ a {
 }
 .l-main__map-txtset {
   width: 100%;
-  height: 691px;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   background-color: rgba(0, 0, 0, 0.4029);
   margin-bottom: 57px;
   z-index: 3;
@@ -584,7 +576,6 @@ a {
   top: 0;
   left: 100%;
   width: 87vw;
-  height: 2716px;
   background-color: #f2ede9;
   color: #707070;
   z-index: -1;
