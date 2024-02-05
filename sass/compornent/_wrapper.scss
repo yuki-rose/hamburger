@@ -2,24 +2,20 @@
 
 .l-main__wrapperGrid {
     display: grid;
-    gap: 20px;
+    gap: 5vw;
     grid-template-columns: 1fr;
-    margin: 20px;
+    margin: 5vw;
     
     @include base.breakpointTablet {
-        margin: 40px;
+        margin: 5vw;
         grid-template-columns: repeat(2, 1fr);
-        gap: 41px;
-        margin-bottom: 40px;
+        gap: 5vw;
+        margin-bottom: 5vw;
     }
 
     @include base.breakpointPc {
-        width: 80%;
-        gap: 80px;
-        padding-right: 6.1vw;
-        margin-left: 6.1vw;
-        margin-top: 120px;
-        margin-bottom: 130px;
+        width: 80vw;
+        gap: 0;
     }
 
     &-item {
@@ -29,12 +25,10 @@
         position: relative;
 
         @include base.breakpointTablet {
-            height: 681px;
-            width: 357px;
+            width: 42vw;
         }
 
         @include base.breakpointPc {
-            height: 1197px;
             width: 32.1vw;
         }
 
@@ -42,14 +36,6 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-
-            @include base.breakpointTablet {
-                height: 681px;
-            }
-
-            @include base.breakpointPc {
-                height: 1197px;
-            }
         }
     }
 
@@ -96,41 +82,41 @@
 
     &-txtboxset {
         position: absolute;
-        bottom: 16px;
-        left: 16px;
+        bottom: 4vw;
+        margin: 4vw;
+        margin-bottom: 0;
+        margin-top: 58vw;
 
         @include base.breakpointTablet {
             position: absolute;
-            top: 341px;
+            bottom: 2vw;
+            margin: 2vw;
+            margin-bottom: 0;
         }
 
         @include base.breakpointPc {
             position: absolute;
-            top: 824px;
-            left: 12px;
+            bottom: 1vw;
         }
     }
 
     &-txtbox {
-        width: calc(100% - 16px);
         height: auto;
         background-color: rgba(255, 255, 255, 0.8);
         text-align: left;
         padding: 16px;
-        margin-top: 16px;
+        margin-top: 4vw;
 
         @include base.breakpointTablet {
-            width: 325px;
-            height: 154px;
             padding-right: 15px;
+            margin-top: 2vw;
         }
 
         @include base.breakpointPc {
             padding: 1vw;
+            margin-top: 1vw;
             padding-bottom: 14px;
-            width: 30.5vw;
-            height: 166px;
-            margin-bottom: 21px;
+            margin-bottom: 1vw;
         }
     }
 

@@ -88,3 +88,38 @@
         display: inherit;
     }
 }
+
+.p-menu__closebtn {
+    background-color: base.$color--gray;
+    content: "";
+    width: 42.25px;
+    height: 6px;
+    margin-top: 20px;
+    margin-right: 3px;
+    margin-left: auto;
+    display: block;
+    text-align: right;
+    transform: rotate(-45deg);
+    
+    @include base.breakpointTablet {
+        margin-top: 40px;
+        margin-right: 25px;
+    }
+
+    @include base.breakpointPc {
+        display: none;
+    }
+
+    &::after {
+        background-color: base.$color--gray;
+        content: "";
+        width: 42.25px;
+        height: 6px;
+        margin-top: 0px;
+        margin-right: 32px;
+        margin-left: auto;
+        display: block;
+        text-align: right;
+        transform: rotate(90deg);
+    }
+}

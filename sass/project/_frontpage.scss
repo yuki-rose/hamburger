@@ -5,13 +5,8 @@
     height: 100%;
     position: relative;
 
-    @include base.breakpointTablet {
-        height: 415px;
-    }
-
     @include base.breakpointPc {
         width: 80%;
-        height: 649px;
     }
 
     &::after {
@@ -25,9 +20,12 @@
         background-color: black;
         opacity: 0.2855;
 
+        @include base.breakpointTablet {
+            height: 100%;
+        }
+
         @include base.breakpointPc {
             width: 50vw;
-            height: 649px;
         }
     }
 
@@ -36,14 +34,6 @@
         object-position: center;
         object-fit: cover;
         z-index: 1;
-
-        @include base.breakpointTablet {
-            height: 415px;
-        }
-
-        @include base.breakpointPc {
-            height: 649px;
-        }
     }
 
     &-ttl {
@@ -83,18 +73,10 @@
         height: auto;
         margin-top: 29px;
 
-        @include base.breakpointTablet {
-            height: 259px;
-            width: 763px;
-            -webkit-line-clamp: 8;
-        }
-
         @include base.breakpointPc {
-            height: 326px;
             width: 36vw;
             font-size: 1.6rem;
             margin-top: 109px;
-            -webkit-line-clamp: 10;
         }
     }
 
@@ -109,14 +91,7 @@
         margin-bottom: 57px;
         z-index: 3;
 
-        @include base.breakpointTablet {
-            height: 415px;
-            padding-left: 42px;
-            padding-right: 29px;
-        }
-
         @include base.breakpointPc {
-            height: 649px;
             padding-left: 6vw;
         }
     }
