@@ -544,7 +544,6 @@ a {
   width: 87vw;
   background-color: #f2ede9;
   color: #707070;
-  z-index: -1;
   transition-duration: 300ms;
 }
 .l-side.is-open {
@@ -569,6 +568,7 @@ a {
     height: 2843px;
     background-color: #f2ede9;
     color: #707070;
+    z-index: -1;
   }
 }
 

@@ -7,7 +7,6 @@
     width: 87vw;
     background-color: #f2ede9;
     color: base.$color--gray;
-    z-index: -1;
     transition-duration: 300ms;
 
     &.is-open {
@@ -31,6 +30,7 @@
         height: 2843px;
         background-color: #f2ede9;
         color: base.$color--gray;
+        z-index: -1;
     }
 }
 
