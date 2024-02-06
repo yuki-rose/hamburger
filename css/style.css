@@ -541,8 +541,8 @@ a {
   position: absolute;
   top: 0;
   left: 100%;
-  width: 87vw;
-  background-color: #f2ede9;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
   color: #707070;
   transition-duration: 300ms;
 }
@@ -555,7 +555,6 @@ a {
 @media (min-width: 590px) {
   .l-side {
     height: 1826px;
-    width: 44vw;
   }
 }
 @media (min-width: 960px) {
@@ -569,6 +568,23 @@ a {
     background-color: #f2ede9;
     color: #707070;
     z-index: -1;
+  }
+}
+.l-side__bg {
+  width: 87vw;
+  background-color: #f2ede9;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 590px) {
+  .l-side__bg {
+    width: 44vw;
+  }
+}
+@media (min-width: 960px) {
+  .l-side__bg {
+    width: 20vw;
   }
 }
 

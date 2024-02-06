@@ -4,8 +4,8 @@
     position: absolute;
     top: 0;
     left: 100%;
-    width: 87vw;
-    background-color: #f2ede9;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
     color: base.$color--gray;
     transition-duration: 300ms;
 
@@ -18,7 +18,6 @@
 
     @include base.breakpointTablet {
         height: 1826px;
-        width: 44vw;
     }
 
     @include base.breakpointPc {
@@ -31,6 +30,22 @@
         background-color: #f2ede9;
         color: base.$color--gray;
         z-index: -1;
+    }
+
+    &__bg {
+        width: 87vw;
+        background-color: #f2ede9;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include base.breakpointTablet {
+            width: 44vw;
+        }
+
+        @include base.breakpointPc {
+            width: 20vw;
+        }
     }
 }
 

@@ -43,6 +43,8 @@ $(window).on("load resize", function() {
         sh = parseInt(headerh) + parseInt(mainh) + parseInt(footerh);
         console.log(sh);
         $('.l-side').height(sh);
+        $('.l-side__bg').height(sh);
+        
     } else {
         let vw = $(window).width();
         console.log(vw);
