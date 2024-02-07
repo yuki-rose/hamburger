@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -537,28 +538,29 @@ a {
   }
 }
 
-.l-side {
+.l-side__base {
   position: absolute;
   top: 0;
   left: 100%;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.5);
+  width: 87vw;
+  background-color: #f2ede9;
   color: #707070;
   transition-duration: 300ms;
 }
-.l-side.is-open {
+.l-side__base.is-open {
   z-index: 5;
   position: absolute;
   left: auto;
   right: 0;
 }
 @media (min-width: 590px) {
-  .l-side {
+  .l-side__base {
     height: 1826px;
+    width: 44vw;
   }
 }
 @media (min-width: 960px) {
-  .l-side {
+  .l-side__base {
     position: absolute;
     left: auto;
     top: 0;
@@ -568,23 +570,6 @@ a {
     background-color: #f2ede9;
     color: #707070;
     z-index: -1;
-  }
-}
-.l-side__bg {
-  width: 87vw;
-  background-color: #f2ede9;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media (min-width: 590px) {
-  .l-side__bg {
-    width: 44vw;
-  }
-}
-@media (min-width: 960px) {
-  .l-side__bg {
-    width: 20vw;
   }
 }
 
@@ -680,5 +665,24 @@ a {
   display: block;
   text-align: right;
   transform: rotate(90deg);
+}
+
+.l-side__bg {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 4;
+}
+.l-side__bg.is-open {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+@media (min-width: 960px) {
+  .l-side__bg {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

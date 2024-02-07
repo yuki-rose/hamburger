@@ -1,6 +1,7 @@
 jQuery( function($) {
     $(".js-menu__btn").on("click", function() {
-        $(".l-side").toggleClass("is-open");
+        $(".l-side__base").toggleClass("is-open");
+        $(".l-side__bg").toggleClass("is-open");
     });
 });
 
@@ -42,9 +43,7 @@ $(window).on("load resize", function() {
         console.log(footerh);
         sh = parseInt(headerh) + parseInt(mainh) + parseInt(footerh);
         console.log(sh);
-        $('.l-side').height(sh);
-        $('.l-side__bg').height(sh);
-        
+        $('.l-side__base').height(sh);
     } else {
         let vw = $(window).width();
         console.log(vw);
@@ -56,6 +55,35 @@ $(window).on("load resize", function() {
         console.log(footerh);
         sh = parseInt(headerh) + parseInt(mainh);
         console.log(sh);
-        $('.l-side').height(sh); 
+        $('.l-side__base').height(sh); 
+       }
+});
+
+$(window).on("load resize", function() { 
+    let vw = $(window).width();
+    console.log(vw);
+    let bp = 960;
+    if (vw <= bp) {
+        let headerh = $('.l-header').height();
+        console.log(headerh);
+        let mainh = $('.l-main').height();
+        console.log(mainh);
+        let footerh = $('.l-footer').outerHeight(true);
+        console.log(footerh);
+        sbgh = parseInt(headerh) + parseInt(mainh) + parseInt(footerh);
+        console.log(sbgh);
+        $('.l-side__bg').height(sbgh);
+    } else {
+        let vw = $(window).width();
+        console.log(vw);
+        let headerh = $('.l-header').height();
+        console.log(headerh);
+        let mainh = $('.l-main').height();
+        console.log(mainh);
+        let footerh = $('.l-footer').outerHeight(true);
+        console.log(footerh);
+        sbgh = parseInt(headerh) + parseInt(mainh);
+        console.log(sbgh);
+        $('.l-side__bg').height(sbgh); 
        }
 });
