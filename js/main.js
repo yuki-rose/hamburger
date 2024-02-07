@@ -1,7 +1,20 @@
 jQuery( function($) {
     $(".js-menu__btn").on("click", function() {
-        $(".l-side__base").toggleClass("is-open");
-        $(".l-side__bg").toggleClass("is-open");
+        $(".l-side__base").addClass("is-open");
+        $(".l-side__bg").addClass("is-open");
+    });
+});
+
+jQuery( function($) {
+    $(".p-menu__closebtn").on("click", function() {
+        window.location.href = "C:\Users\nekoj\Desktop\hamburger\index.html"
+    });
+});
+
+jQuery( function($) {
+    $(".l-side__bg").on("click", function() {
+        $(".l-side__base").removeClass("is-open");
+        $(".l-side__bg").removeClass("is-open");
     });
 });
 
