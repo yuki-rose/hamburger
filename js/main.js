@@ -7,7 +7,8 @@ jQuery( function($) {
 
 jQuery( function($) {
     $(".p-menu__closebtn").on("click", function() {
-        window.location.href = "C:\Users\nekoj\Desktop\hamburger\index.html"
+        $(".l-side__base").removeClass("is-open");
+        $(".l-side__bg").removeClass("is-open");
     });
 });
 
@@ -20,27 +21,27 @@ jQuery( function($) {
 
 $(window).on("load resize", function() {
     let h = 0;
-    $('.l-main__wrapperGrid-txtboxset').each(function() {
+    $('.p-main__wrapperGrid-txtboxset').each(function() {
         if($(this).height() > h ){
             h = $(this).height();
         }
     });
     if (window.matchMedia('(max-width: 960px)').matches) {
         let ItemHeight = h + 298
-        $('.l-main__wrapperGrid-item').height(ItemHeight);
+        $('.p-main__wrapperGrid-item').height(ItemHeight);
     } else if (window.matchMedia('(max-width: 590px)').matches) {
         let ItemHeight = h + 341
-        $('.l-main__wrapperGrid-item').height(ItemHeight);
+        $('.p-main__wrapperGrid-item').height(ItemHeight);
     } else {
         let ItemHeight = h + 824
-        $('.l-main__wrapperGrid-item').height(ItemHeight);
+        $('.p-main__wrapperGrid-item').height(ItemHeight);
     }
 });
 
 $(window).on("load resize", function() {
-    let mh = $('.l-main__map-txtset').height();
+    let mh = $('.p-map-txtset').height();
     let imgh = mh + 80
-    $('.l-main__map-img').height(imgh);
+    $('.p-map-img').height(imgh);
 });
 
 $(window).on("load resize", function() { 
