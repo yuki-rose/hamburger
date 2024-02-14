@@ -101,3 +101,22 @@ $(window).on("load resize", function() {
         $('.l-side__bg').height(sbgh); 
        }
 });
+
+$(window).on("load resize", function() {
+    let h = 0;
+    $('.c-archive__wrapperGrid-txtboxset').each(function() {
+        if($(this).height() > h ){
+            h = $(this).height();
+        }
+    });
+    if (window.matchMedia('(max-width: 960px)').matches) {
+        let ItemHeight = h + 298
+        $('.c-archive__wrapperGrid-item').height(ItemHeight);
+    } else if (window.matchMedia('(max-width: 590px)').matches) {
+        let ItemHeight = h + 341
+        $('.c-archive__wrapperGrid-item').height(ItemHeight);
+    } else {
+        let ItemHeight = h + 824
+        $('.c-archive__wrapperGrid-item').height(ItemHeight);
+    }
+});
