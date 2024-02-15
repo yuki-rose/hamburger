@@ -1,0 +1,66 @@
+@use "../../foundation/base";
+
+.c-pagenation {
+    padding-top: 16.5vw;
+    padding-left: 5.3vw;
+    padding-right: 5.3vw;
+    padding-bottom: 8.5vw;
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+        color: base.$color--gray;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+.prev-mark {
+    color: base.$color--gray;
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid base.$color--gray;
+    border-left: 1px solid base.$color--gray;
+    display: inline-block;
+    transform: rotate(-45deg); 
+    position: relative;
+    margin-right: 2.5vw;
+
+    &::before {
+        content: "";
+        color: base.$color--gray;
+        width: 12px;
+        height: 12px;
+        border-top: 1px solid base.$color--gray;
+        border-left: 1px solid base.$color--gray;
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+}
+
+.next-mark {
+    color: base.$color--gray;
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid base.$color--gray;
+    border-left: 1px solid base.$color--gray;
+    display: inline-block;
+    transform: rotate(135deg); 
+    position: relative;
+    margin-left: 2.5vw;
+
+    &::before {
+        content: "";
+        color: base.$color--gray;
+        width: 12px;
+        height: 12px;
+        border-top: 1px solid base.$color--gray;
+        border-left: 1px solid base.$color--gray;
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+}
