@@ -64,11 +64,11 @@
     }
 
     @include base.breakpointPc {
-        font-size: 4.0rem;
-        height: 59px;
-        width: 240px;
+        font-size: 6.0rem;
+        height: 70px;
+        width: 170px;
         position: absolute;
-        top: 234px;
+        top: 83px;
     }
 
     &-sub {
@@ -84,6 +84,11 @@
             position: absolute;
             left: 275px;
             bottom: 115px;
+        }
+
+        @include base.breakpointPc {
+            position: absolute;
+            top: 120px;
         }
     }
 }
@@ -101,10 +106,14 @@
         position: absolute;
         top: 100;
         left: 100;
+
+        @include base.breakpointPc {
+            height: 239px;
+        }
     }
 
     @include base.breakpointPc {
-        height: 530px;
+        height: 239px;
         width: 80%;
     }
 
@@ -112,11 +121,13 @@
         height: 285px;
         width: 100%;
         object-fit: cover;
-        object-position: left;
         opacity: 100;
+        object-position: left;
 
         @include base.breakpointPc {
-            height: 530px;
+            height: 239px;
+            content: url("/images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
         }
+
     }
 }

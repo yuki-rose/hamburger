@@ -144,11 +144,11 @@ a {
 }
 @media (min-width: 960px) {
   .c-main__archivettl {
-    font-size: 4rem;
-    height: 59px;
-    width: 240px;
+    font-size: 6rem;
+    height: 70px;
+    width: 170px;
     position: absolute;
-    top: 234px;
+    top: 83px;
   }
 }
 .c-main__archivettl-sub {
@@ -167,6 +167,12 @@ a {
     bottom: 115px;
   }
 }
+@media (min-width: 960px) {
+  .c-main__archivettl-sub {
+    position: absolute;
+    top: 120px;
+  }
+}
 
 .c-mainvisual__archive {
   height: 285px;
@@ -183,8 +189,13 @@ a {
   left: 100;
 }
 @media (min-width: 960px) {
+  .c-mainvisual__archive::before {
+    height: 239px;
+  }
+}
+@media (min-width: 960px) {
   .c-mainvisual__archive {
-    height: 530px;
+    height: 239px;
     width: 80%;
   }
 }
@@ -193,13 +204,14 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 100;
   -o-object-position: left;
      object-position: left;
-  opacity: 100;
 }
 @media (min-width: 960px) {
   .c-mainvisual__archive img {
-    height: 530px;
+    height: 239px;
+    content: url("/images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
   }
 }
 
@@ -793,6 +805,11 @@ a {
   }
 }
 
+@media (min-width: 960px) {
+  .c-archive {
+    width: 80%;
+  }
+}
 .c-archive__ttl {
   color: #3c2a10;
   font-size: 2.8rem;
@@ -807,7 +824,12 @@ a {
     margin-left: 5vw;
   }
 }
-
+@media (min-width: 960px) {
+  .c-archive__ttl {
+    margin-top: 3.2vw;
+    margin-left: 5.2vw;
+  }
+}
 .c-archive__txt {
   color: #3c2a10;
   font-size: 1.6rem;
@@ -821,6 +843,13 @@ a {
     margin-left: 5vw;
     margin-top: 2.24vw;
     margin-right: 4.2vw;
+  }
+}
+@media (min-width: 960px) {
+  .c-archive__txt {
+    margin-left: 5.2vw;
+    margin-top: 1vw;
+    margin-right: 5.2vw;
   }
 }
 
@@ -842,7 +871,8 @@ a {
 @media (min-width: 960px) {
   .c-archive__wrapperGrid {
     width: 80vw;
-    gap: 0;
+    gap: 1.5vw;
+    margin: 5.2vw;
   }
 }
 .c-archive__wrapperGrid-item {
@@ -856,7 +886,7 @@ a {
 }
 @media (min-width: 960px) {
   .c-archive__wrapperGrid-item {
-    width: 32.1vw;
+    width: 70.4vw;
   }
 }
 .c-archive__wrapperGrid-item img {
@@ -872,6 +902,11 @@ a {
     -o-object-position: 35%;
        object-position: 35%;
     flex-direction: row;
+  }
+}
+@media (min-width: 960px) {
+  .c-archive__wrapperGrid-item img {
+    width: 35.2vw;
   }
 }
 .c-archive__wrapperGrid-ttl {
@@ -890,9 +925,9 @@ a {
 }
 @media (min-width: 960px) {
   .c-archive__wrapperGrid-ttl {
-    font-size: 8rem;
+    font-size: 3.6rem;
     position: absolute;
-    top: 24px;
+    top: 56px;
   }
 }
 .c-archive__wrapperGrid-txtbox {
@@ -912,10 +947,11 @@ a {
 }
 @media (min-width: 960px) {
   .c-archive__wrapperGrid-txtbox {
-    padding: 1vw;
-    margin-top: 1vw;
-    padding-bottom: 14px;
-    margin-bottom: 1vw;
+    padding: 3.2vw;
+    width: 35.2vw;
+    padding-bottom: 3.1vw;
+    padding-right: 5.4vw;
+    padding-top: 6vw;
   }
 }
 .c-archive__wrapperGrid-txt {
@@ -947,7 +983,9 @@ a {
 }
 @media (min-width: 960px) {
   .c-archive__wrapperGrid-txt__ttl {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+    font-size: 2.4rem;
+    margin-top: 2.3vw;
   }
 }
 
@@ -974,6 +1012,15 @@ a {
     margin-bottom: 0.5vw;
   }
 }
+@media (min-width: 960px) {
+  .c-detail__btn {
+    margin-top: 3.1vw;
+    border-radius: 50px;
+    width: 15.2vw;
+    height: 3.9vw;
+    margin-bottom: 0;
+  }
+}
 
 .c-pagenation {
   padding-top: 16.5vw;
@@ -989,6 +1036,15 @@ a {
     padding-bottom: 3.8vw;
     padding-left: 14.6vw;
     padding-right: 14vw;
+  }
+}
+@media (min-width: 960px) {
+  .c-pagenation {
+    width: 80%;
+    padding-top: 2.6vw;
+    padding-bottom: 3.3vw;
+    padding-left: 24.8vw;
+    padding-right: 24.8vw;
   }
 }
 .c-pagenation__btn {
@@ -1017,6 +1073,12 @@ a {
     white-space: nowrap;
   }
 }
+@media (min-width: 960px) {
+  .c-pagenation__pageno {
+    width: 3.8vw;
+    margin-right: 0;
+  }
+}
 .c-pagenation__pagelist {
   display: flex;
   justify-content: space-between;
@@ -1037,10 +1099,20 @@ a {
     text-align: center;
     line-height: 35px;
   }
+}
+@media (min-width: 590px) and (min-width: 960px) {
+  .c-pagenation__page {
+    margin-right: 0.7vw;
+    margin-left: 0;
+  }
+}
+@media (min-width: 590px) {
   .c-pagenation__page:first-child {
     color: white;
     background-color: #3c2a1c;
   }
+}
+@media (min-width: 590px) {
   .c-pagenation__page:last-child {
     margin-right: 0;
   }
@@ -1060,6 +1132,12 @@ a {
 @media (min-width: 590px) {
   .prev-mark {
     margin-left: 2vw;
+  }
+}
+@media (min-width: 960px) {
+  .prev-mark {
+    margin-left: 1vw;
+    margin-right: 0.8vw;
   }
 }
 .prev-mark::before {
@@ -1089,6 +1167,11 @@ a {
 @media (min-width: 590px) {
   .next-mark {
     margin-left: 2vw;
+  }
+}
+@media (min-width: 960px) {
+  .next-mark {
+    display: none;
   }
 }
 .next-mark::before {

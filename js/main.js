@@ -101,3 +101,4 @@ $(window).on("load resize", function() {
         $('.l-side__bg').height(sbgh); 
        }
 });
+

@@ -16,7 +16,8 @@
 
     @include base.breakpointPc {
         width: 80vw;
-        gap: 0;
+        gap: 1.5vw;
+        margin: 5.2vw;
     }
 
     &-item {
@@ -28,7 +29,7 @@
         }
 
         @include base.breakpointPc {
-            width: 32.1vw;
+            width: 70.4vw;
         }
 
         img {
@@ -41,6 +42,10 @@
                 width: 45vw;
                 object-position: 35%;
                 flex-direction: row;
+            }
+
+            @include base.breakpointPc {
+                width: 35.2vw;
             }
         }
     }
@@ -59,9 +64,9 @@
         }
 
         @include base.breakpointPc {
-            font-size: 8.0rem;
+            font-size: 3.6rem;
             position: absolute;
-            top: 24px;
+            top: 56px;
         }
     }
 
@@ -80,10 +85,11 @@
         }
 
         @include base.breakpointPc {
-            padding: 1vw;
-            margin-top: 1vw;
-            padding-bottom: 14px;
-            margin-bottom: 1vw;
+            padding: 3.2vw;
+            width: 35.2vw;
+            padding-bottom: 3.1vw;
+            padding-right: 5.4vw;
+            padding-top: 6.0vw;
         }
     }
 
@@ -112,7 +118,9 @@
             }
 
             @include base.breakpointPc {
-                margin-bottom: 10px;
+                margin-bottom: 13px;
+                font-size: 2.4rem;
+                margin-top: 2.3vw;
             }
         }
     }
@@ -138,5 +146,13 @@
         height: 5vw;
         margin-top: 5.3vw;
         margin-bottom: 0.5vw;
+    }
+
+    @include base.breakpointPc {
+        margin-top: 3.1vw;
+        border-radius: 50px;
+        width: 15.2vw;
+        height: 3.9vw;
+        margin-bottom: 0;
     }
 }

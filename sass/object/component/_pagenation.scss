@@ -15,6 +15,14 @@
         padding-right: 14.0vw;
     }
 
+    @include base.breakpointPc {
+        width: 80%;
+        padding-top: 2.6vw;
+        padding-bottom: 3.3vw;
+        padding-left: 24.8vw;
+        padding-right: 24.8vw;
+    }
+
     &__btn {
         color: base.$color--gray;
         font-size: 1.6rem;
@@ -39,6 +47,11 @@
             margin-top: 8px;
             white-space: nowrap;
         }
+
+        @include base.breakpointPc {
+            width: 3.8vw;
+            margin-right: 0;
+        }
     }
 
     &__pagelist {
@@ -60,6 +73,11 @@
             margin-right: 1.7vw;
             text-align: center;
             line-height: 35px;
+
+            @include base.breakpointPc {
+                margin-right: 0.7vw;
+                margin-left: 0;
+            }
             
             &:first-child {
                 color: white;
@@ -86,6 +104,11 @@
 
     @include base.breakpointTablet {
         margin-left: 2.0vw;
+    }
+
+    @include base.breakpointPc {
+        margin-left: 1vw;
+        margin-right: 0.8vw;
     }
 
     &::before {
@@ -115,6 +138,10 @@
 
     @include base.breakpointTablet {
         margin-left: 2.0vw;
+    }
+
+    @include base.breakpointPc {
+        display: none;
     }
 
     &::before {
