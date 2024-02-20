@@ -57,8 +57,9 @@
     left: 37px;
 
     @include base.breakpointTablet {
+        font-size: 6.0rem;
         position: absolute;
-        top: 122px;
+        top: 107px;
         left: 86px;
     }
 
@@ -77,6 +78,13 @@
         position: absolute;
         bottom: 101px;
         left: 37px;
+
+        @include base.breakpointTablet {
+            height: 24px;
+            position: absolute;
+            left: 275px;
+            bottom: 115px;
+        }
     }
 }
 

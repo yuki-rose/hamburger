@@ -6,6 +6,12 @@
     font-weight: 700;
     margin-left: 5.8vw;
     margin-top: 8.5vw;
+
+    @include base.breakpointTablet {
+        font-size: 3.6rem;
+        margin-top: 4.6vw;
+        margin-left: 5vw;
+    }
 }
 
 .c-archive__txt {
@@ -15,4 +21,10 @@
     margin-left: 5.8vw;
     margin-top: 6.6vw;
     margin-right: 4.8vw;
+
+    @include base.breakpointTablet {
+        margin-left: 5vw;
+        margin-top: 2.24vw;
+        margin-right: 4.2vw;
+    }
 }

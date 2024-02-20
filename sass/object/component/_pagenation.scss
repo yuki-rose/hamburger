@@ -8,10 +8,68 @@
     display: flex;
     justify-content: space-between;
 
+    @include base.breakpointTablet {
+        padding-top: 0;
+        padding-bottom: 3.8vw;
+        padding-left: 14.6vw;
+        padding-right: 14.0vw;
+    }
+
     &__btn {
         color: base.$color--gray;
         font-size: 1.6rem;
         font-weight: 400;
+
+        @include base.breakpointTablet {
+            font-size: 0;
+        }
+    }
+
+    &__pageno {
+        display: none;
+
+        @include base.breakpointTablet {
+            width: 8.7vw;
+            height: 33px;
+            color: base.$color--gray;
+            display: unset;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-right: 0.3vw;
+            margin-top: 8px;
+            white-space: nowrap;
+        }
+    }
+
+    &__pagelist {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__page {
+        display: none;
+
+        @include base.breakpointTablet {
+            display: unset;
+            color: base.$color--gray;
+            font-size: 1.6rem;
+            font-weight: 700;
+            width: 35px;
+            height: 35px;
+            border: 1px solid base.$color--gray;
+            margin-right: 1.7vw;
+            text-align: center;
+            line-height: 35px;
+            
+            &:first-child {
+                color: white;
+                background-color: base.$color--darkbrown;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
 
@@ -25,6 +83,10 @@
     transform: rotate(-45deg); 
     position: relative;
     margin-right: 2.5vw;
+
+    @include base.breakpointTablet {
+        margin-left: 2.0vw;
+    }
 
     &::before {
         content: "";
@@ -50,6 +112,10 @@
     transform: rotate(135deg); 
     position: relative;
     margin-left: 2.5vw;
+
+    @include base.breakpointTablet {
+        margin-left: 2.0vw;
+    }
 
     &::before {
         content: "";
