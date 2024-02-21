@@ -47,48 +47,61 @@
     }
 }
 
+.c-main__archive-ttlset {
+    width: 32.8vw;
+    height: 78px;
+    position: absolute;
+    top: 106px;
+    left: 9.8vw;
+
+    @include base.breakpointTablet {
+        width: 40.4vw;
+        height: 70px;
+        position: absolute;
+        top: 107px;
+        left: 10.3vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    @include base.breakpointPc {
+        width: 17.5vw;
+        position: absolute;
+        top: 83px;
+        left: 4.4vw;
+    }
+}
+
+
 .c-main__archivettl {
     color: base.$color--white;
     height: 43px;
     font-size: 3.6rem;
     font-weight: 700;
-    position: absolute;
-    top: 106px;
-    left: 37px;
 
     @include base.breakpointTablet {
         font-size: 6.0rem;
-        position: absolute;
-        top: 107px;
-        left: 86px;
     }
 
     @include base.breakpointPc {
         font-size: 6.0rem;
         height: 70px;
-        width: 170px;
-        position: absolute;
-        top: 83px;
     }
 
     &-sub {
         color: base.$color--white;
         font-size: 1.6rem;
         font-weight: 700;
-        position: absolute;
-        bottom: 101px;
-        left: 37px;
+        margin-top: 12px;
 
         @include base.breakpointTablet {
-            height: 24px;
-            position: absolute;
-            left: 275px;
-            bottom: 115px;
+            margin-top: 35px;
+            margin-left: 2.3vw;
         }
 
         @include base.breakpointPc {
-            position: absolute;
-            top: 120px;
+            margin-left: 1vw;
+            margin-top: 40px;
         }
     }
 }

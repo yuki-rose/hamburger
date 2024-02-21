@@ -125,52 +125,66 @@ a {
   }
 }
 
+.c-main__archive-ttlset {
+  width: 32.8vw;
+  height: 78px;
+  position: absolute;
+  top: 106px;
+  left: 9.8vw;
+}
+@media (min-width: 590px) {
+  .c-main__archive-ttlset {
+    width: 40.4vw;
+    height: 70px;
+    position: absolute;
+    top: 107px;
+    left: 10.3vw;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 960px) {
+  .c-main__archive-ttlset {
+    width: 17.5vw;
+    position: absolute;
+    top: 83px;
+    left: 4.4vw;
+  }
+}
+
 .c-main__archivettl {
   color: #ffffff;
   height: 43px;
   font-size: 3.6rem;
   font-weight: 700;
-  position: absolute;
-  top: 106px;
-  left: 37px;
 }
 @media (min-width: 590px) {
   .c-main__archivettl {
     font-size: 6rem;
-    position: absolute;
-    top: 107px;
-    left: 86px;
   }
 }
 @media (min-width: 960px) {
   .c-main__archivettl {
     font-size: 6rem;
     height: 70px;
-    width: 170px;
-    position: absolute;
-    top: 83px;
   }
 }
 .c-main__archivettl-sub {
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 700;
-  position: absolute;
-  bottom: 101px;
-  left: 37px;
+  margin-top: 12px;
 }
 @media (min-width: 590px) {
   .c-main__archivettl-sub {
-    height: 24px;
-    position: absolute;
-    left: 275px;
-    bottom: 115px;
+    margin-top: 35px;
+    margin-left: 2.3vw;
   }
 }
 @media (min-width: 960px) {
   .c-main__archivettl-sub {
-    position: absolute;
-    top: 120px;
+    margin-left: 1vw;
+    margin-top: 40px;
   }
 }
 
@@ -769,8 +783,11 @@ a {
   border: 1px solid #707070;
   margin-right: 4.2vw;
   background-color: #ffffff;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 11px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black;
+  line-height: 6.3vw;
 }
 @media (min-width: 590px) {
   .p-search__input {

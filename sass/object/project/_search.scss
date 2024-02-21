@@ -29,8 +29,11 @@
         border: 1px solid base.$color--gray;
         margin-right: 4.2vw;
         background-color: base.$color--white;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 10px 11px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: black;
+        line-height: 6.3vw;
 
         @include base.breakpointTablet {
             width: 47.4vw;
