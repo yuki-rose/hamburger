@@ -49,8 +49,9 @@
         }
 
         @include base.breakpointPc {
+            display: flex;
             width: 3.8vw;
-            margin-right: 0;
+            margin-right: 2vw;
         }
     }
 
@@ -75,7 +76,7 @@
             line-height: 35px;
 
             @include base.breakpointPc {
-                margin-right: 0.7vw;
+                margin-right: 0.8vw;
                 margin-left: 0;
             }
             
@@ -107,6 +108,7 @@
     }
 
     @include base.breakpointPc {
+        display: flex;
         margin-left: 1vw;
         margin-right: 0.8vw;
     }
