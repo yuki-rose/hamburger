@@ -151,3 +151,60 @@
 
     }
 }
+
+.c-main__pagettl {
+    color: base.$color--white;
+    height: 43px;
+    font-size: 3.6rem;
+    font-weight: 700;
+    position: absolute;
+    top: 93px;
+    left: 12vw;
+
+    @include base.breakpointTablet {
+        font-size: 6.0rem;
+        position: absolute;
+        top: 25.7vw;
+        left: 10.3vw;
+    }
+
+    @include base.breakpointPc {
+        font-size: 6.0rem;
+        height: 70px;
+        position: absolute;
+        top: 213px;
+        left: 4.4vw;
+    }
+}
+
+.c-mainvisual__page {
+    height: 225px;
+    width: 100%;
+    position: relative;
+
+    @include base.breakpointTablet {
+        height: 505px;
+    }
+
+    @include base.breakpointPc {
+        width: 80%;
+    }
+
+    img {
+        height: 225px;
+        width: 100%;
+        object-fit: cover;
+        opacity: 100;
+        object-position: left;
+
+        @include base.breakpointTablet {
+            height: 505px;
+        }
+
+        @include base.breakpointPc {
+            height: 500px;
+            content: url("/images/black-steel-lamp-post-pc1070945.jpg");
+        }
+
+    }
+}

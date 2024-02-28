@@ -1270,6 +1270,69 @@ q {
   }
 }
 
+.c-main__pagettl {
+  color: #ffffff;
+  height: 43px;
+  font-size: 3.6rem;
+  font-weight: 700;
+  position: absolute;
+  top: 93px;
+  left: 12vw;
+}
+@media (min-width: 590px) {
+  .c-main__pagettl {
+    font-size: 6rem;
+    position: absolute;
+    top: 25.7vw;
+    left: 10.3vw;
+  }
+}
+@media (min-width: 960px) {
+  .c-main__pagettl {
+    font-size: 6rem;
+    height: 70px;
+    position: absolute;
+    top: 213px;
+    left: 4.4vw;
+  }
+}
+
+.c-mainvisual__page {
+  height: 225px;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 590px) {
+  .c-mainvisual__page {
+    height: 505px;
+  }
+}
+@media (min-width: 960px) {
+  .c-mainvisual__page {
+    width: 80%;
+  }
+}
+.c-mainvisual__page img {
+  height: 225px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 100;
+  -o-object-position: left;
+     object-position: left;
+}
+@media (min-width: 590px) {
+  .c-mainvisual__page img {
+    height: 505px;
+  }
+}
+@media (min-width: 960px) {
+  .c-mainvisual__page img {
+    height: 500px;
+    content: url("/images/black-steel-lamp-post-pc1070945.jpg");
+  }
+}
+
 .c-single__txtset {
   padding: 5.3vw;
 }
@@ -1519,7 +1582,7 @@ q {
 .c-single__visual-mid {
   margin: 14.4vw;
   margin-top: 0;
-  margin-bottom: 5.3vw;
+  margin-bottom: 8vw;
 }
 @media (min-width: 590px) {
   .c-single__visual-mid {
@@ -1558,7 +1621,7 @@ q {
 @media (min-width: 960px) {
   .c-single__caption {
     margin: 5.2vw;
-    margin-top: 0;
+    margin-top: -2.5vw;
     margin-bottom: 0;
   }
 }
@@ -1631,12 +1694,11 @@ q {
 }
 @media (min-width: 960px) {
   .c-single__wrapperGrid {
-    width: 80%;
+    width: 70.5%;
     grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
     margin-left: 5.2vw;
     margin-right: 5.2vw;
-    padding-right: 5.2vw;
   }
 }
 .c-single__wrapperGrid img {
@@ -1652,9 +1714,7 @@ q {
 }
 @media (min-width: 960px) {
   .c-single__wrapperGrid img {
-    width: 22.8vw;
-    margin-right: 0;
-    margin-left: 0;
+    width: 100%;
   }
 }
 
