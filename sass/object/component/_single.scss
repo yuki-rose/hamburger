@@ -11,7 +11,7 @@
         @include base.breakpointPc {
             padding: 5.2vw;
             padding-top: 3.2vw;
-            padding-bottom: 2.9vw;
+            margin-bottom: 2.9vw;
         }
     }
 
@@ -19,7 +19,7 @@
         color: base.$color--brown;
         font-size: 2.8rem;
         font-weight: 700;
-        margin-top: 3.7vw;
+        padding-top: 3.7vw;
 
         @include base.breakpointTablet {
             font-size: 3.6rem;
@@ -48,14 +48,14 @@
     }
 
     &__ttlset {
-        margin-top: 9.6vw;
+        padding-top: 9.6vw;
 
         @include base.breakpointTablet {
-            margin-top: 7.4vw;
+            padding-top: 7.4vw;
         }
 
         @include base.breakpointPc {
-            margin-top: 3.1vw;
+            padding-top: 3.1vw;
         }
     }
 
@@ -133,6 +133,7 @@
             width: 22.3vw;
             margin: 5.2vw;
             margin-top: -2.1vw;
+            margin-bottom: 3.1vw;
         }
     }
 
@@ -140,20 +141,19 @@
         color: base.$color--brown;
         font-size: 1.6rem;
         font-weight: 700;
-        margin: 5.3vw;
-        margin-top: 2.9vw;
+        margin-left: 5.3vw;
+        padding-top: 2.9vw;
         padding-bottom: 13.1vw;
 
         @include base.breakpointTablet {
-            margin: 7.1vw;
-            margin-top: 0;
-            margin-bottom: 3.6vw;
+            margin-left: 7.1vw;
+            padding-top: 0;
+            padding-bottom: 17.8vw;
         }
 
         @include base.breakpointPc {
-            margin: 5.2vw;
-            margin-top: -2.1vw;
-            margin-bottom: 0vw;
+            margin-left: 5.2vw;
+            padding-bottom: 14.2vw;
         }
     }
 }

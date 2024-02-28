@@ -51,7 +51,7 @@ $(window).on("load resize", function() {
     if (vw <= bp) {
         let headerh = $('.l-header').height();
         console.log(headerh);
-        let mainh = $('.l-main').height();
+        let mainh = $('.l-main').outerHeight(true);
         console.log(mainh);
         let footerh = $('.l-footer').outerHeight(true);
         console.log(footerh);
@@ -63,7 +63,7 @@ $(window).on("load resize", function() {
         console.log(vw);
         let headerh = $('.l-header').height();
         console.log(headerh);
-        let mainh = $('.l-main').height();
+        let mainh = $('.l-main').outerHeight(true);
         console.log(mainh);
         let footerh = $('.l-footer').outerHeight(true);
         console.log(footerh);
@@ -80,7 +80,7 @@ $(window).on("load resize", function() {
     if (vw <= bp) {
         let headerh = $('.l-header').height();
         console.log(headerh);
-        let mainh = $('.l-main').height();
+        let mainh = $('.l-main').outerHeight(true);
         console.log(mainh);
         let footerh = $('.l-footer').outerHeight(true);
         console.log(footerh);
@@ -92,7 +92,7 @@ $(window).on("load resize", function() {
         console.log(vw);
         let headerh = $('.l-header').height();
         console.log(headerh);
-        let mainh = $('.l-main').height();
+        let mainh = $('.l-main').outerHeight(true);
         console.log(mainh);
         let footerh = $('.l-footer').outerHeight(true);
         console.log(footerh);
