@@ -36,6 +36,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a :hover {
+  opacity: 0.6;
+}
 
 q {
   quotes: none;
@@ -449,7 +452,6 @@ q {
   background-color: #f2ede9;
   color: #707070;
   transition: all 300ms 0s ease-out;
-  z-index: 1;
 }
 .l-side__base.is-open {
   z-index: 5;
@@ -474,7 +476,7 @@ q {
     height: 2843px;
     background-color: #f2ede9;
     color: #707070;
-    z-index: -1;
+    z-index: 5;
   }
 }
 @media (min-width: 590px) {
@@ -514,7 +516,7 @@ q {
 }
 @media (min-width: 960px) {
   .l-side__bg {
-    display: none;
+    z-index: -1;
   }
 }
 
