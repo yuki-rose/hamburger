@@ -21,6 +21,7 @@
     &-item {
         position: relative;
         background-size: cover;
+        display: flex;
 
         @include base.breakpointTablet {
             width: 42vw;
@@ -28,11 +29,6 @@
 
         @include base.breakpointPc {
             width: 32.1vw;
-        }
-
-        img {
-            width: 100%;
-            object-fit: cover;
         }
     }
 
@@ -43,14 +39,12 @@
         position: absolute;
         top: 3.4vw;
         left: 4vw;
-        margin-bottom: 63.2vw;
 
         @include base.breakpointTablet {
             font-size: 4.4rem;
             position: absolute;
             top: 1.6vw;
             left: 1.3vw;
-            margin-bottom: 32.9vw;
         }
 
         @include base.breakpointPc {
@@ -58,7 +52,6 @@
             position: absolute;
             top: 1.4vw;
             left: 1.1vw;
-            margin-bottom: 36.7vw;
         }
 
         &::after {
@@ -147,10 +140,15 @@
     }
 }
 
-.griditem-takeout {
+a {
+    align-self: flex-end;
+}
+
+.eatin-bg {
+    background-image: url(../../../images/473d814b175bd517b56eb309f2958725.jpg);
+}
+
+.takeout-bg {
     background-image: url(../../../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
 }
 
-.griditem-eatin {
-    background-image: url(../../../images/473d814b175bd517b56eb309f2958725.jpg);
-}
