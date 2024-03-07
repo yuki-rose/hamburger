@@ -19,10 +19,8 @@
     }
 
     &-item {
-        height: auto;
-        object-fit: cover;
-        text-align: center;
         position: relative;
+        background-size: cover;
 
         @include base.breakpointTablet {
             width: 42vw;
@@ -33,7 +31,6 @@
         }
 
         img {
-            height: 100%;
             width: 100%;
             object-fit: cover;
         }
@@ -44,20 +41,24 @@
         font-weight: 700;
         color: #eaeaea;
         position: absolute;
-        top: 13px;
-        left: 15px;
+        top: 3.4vw;
+        left: 4vw;
+        margin-bottom: 63.2vw;
 
         @include base.breakpointTablet {
             font-size: 4.4rem;
             position: absolute;
-            top: 14px;
-            left: 11px;
+            top: 1.6vw;
+            left: 1.3vw;
+            margin-bottom: 32.9vw;
         }
 
         @include base.breakpointPc {
             font-size: 8.0rem;
             position: absolute;
-            top: 24px;
+            top: 1.4vw;
+            left: 1.1vw;
+            margin-bottom: 36.7vw;
         }
 
         &::after {
@@ -81,22 +82,17 @@
     }
 
     &-txtboxset {
-        position: absolute;
-        bottom: 4vw;
-        margin: 4vw;
-        margin-bottom: 0;
-        margin-top: 58vw;
+        padding: 4.2vw;
+        margin-top: 71.45vw;
 
         @include base.breakpointTablet {
-            position: absolute;
-            bottom: 2vw;
-            margin: 2vw;
-            margin-bottom: 0;
+            padding: 1.9vw;
+            margin-top: 40.29vw;
         }
 
         @include base.breakpointPc {
-            position: absolute;
-            bottom: 1vw;
+            padding: 1vw;
+            margin-top: 31.16vw;
         }
     }
 
@@ -116,7 +112,6 @@
             padding: 1vw;
             margin-top: 1vw;
             padding-bottom: 14px;
-            margin-bottom: 1vw;
         }
     }
 
@@ -150,4 +145,12 @@
             }
         }
     }
+}
+
+.griditem-takeout {
+    background-image: url(../../../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
+}
+
+.griditem-eatin {
+    background-image: url(../../../images/473d814b175bd517b56eb309f2958725.jpg);
 }

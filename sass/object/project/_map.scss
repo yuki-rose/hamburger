@@ -2,38 +2,11 @@
 
 .p-map {
     width: 100%;
-    height: 100%;
-    position: relative;
+    background-image: linear-gradient(to bottom , rgba(0,0,0,0.4029), rgba(0,0,0,0.4029)), url(../../../images/map.png);
+    background-size: cover;
 
     @include base.breakpointPc {
         width: 80%;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        height: 60%;
-        background-color: black;
-        opacity: 0.2855;
-
-        @include base.breakpointTablet {
-            height: 100%;
-        }
-
-        @include base.breakpointPc {
-            width: 50vw;
-        }
-    }
-
-    &-img {
-        width: 100%;
-        object-position: center;
-        object-fit: cover;
-        z-index: 1;
     }
 
     &-ttl {
@@ -82,17 +55,20 @@
 
     &-txtset {
         width: 100%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
         padding: 40px;
-        background-color: rgba($color: #000000, $alpha: 0.4029);
-        margin-bottom: 57px;
-        z-index: 3;
-
+        padding-bottom: 15.2vw;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.2855) 60%,rgba(0,0,0,0) 60%);
+    
+        @include base.breakpointTablet {
+            padding: 5vw;
+            background-image: linear-gradient(180deg, rgba(0,0,0,0.2855) 60%,rgba(0,0,0,0.2855) 60%);
+        }
         @include base.breakpointPc {
-            padding-left: 6vw;
+            padding-top: 4.4vw;
+            padding-left: 6.1vw;
+            padding-bottom: 3.9vw;
+            padding-right: 38.3vw;
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.2855) 61.1%,rgba(0,0,0,0) 61.1%);
         }
     }
 }
