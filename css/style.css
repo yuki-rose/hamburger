@@ -434,24 +434,13 @@ a {
   left: 13vw;
   right: 0;
   transition: all 300ms 0s ease-out;
+  height: 100%;
+  overflow: auto;
 }
 @media (min-width: 590px) {
   .l-side__base.is-open {
     position: absolute;
     left: 56vw;
-  }
-}
-@media (min-width: 960px) {
-  .l-side__base.is-open {
-    position: absolute;
-    left: auto;
-    top: 0;
-    right: 0;
-    width: 20%;
-    height: 2843px;
-    background-color: #f2ede9;
-    color: #707070;
-    z-index: 5;
   }
 }
 @media (min-width: 590px) {
