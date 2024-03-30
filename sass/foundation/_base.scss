@@ -36,6 +36,10 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
+
+    &.is-open {
+        position: fixed;
+    }
 }
 
 img {

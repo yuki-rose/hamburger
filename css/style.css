@@ -15,6 +15,9 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+body.is-open {
+  position: fixed;
+}
 
 img {
   max-width: 100%;
@@ -435,7 +438,7 @@ a {
   right: 0;
   transition: all 300ms 0s ease-out;
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
 }
 @media (min-width: 590px) {
   .l-side__base.is-open {
@@ -563,10 +566,17 @@ a {
   text-align: right;
   transform: rotate(90deg);
 }
-.p-menu__closebtn::befor {
+.p-menu__closebtn::before {
+  content: "";
+  display: block;
+  background-color: aqua;
   opacity: 0;
-  width: 32px;
-  height: 37px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  transform: rotate(45deg);
 }
 
 .menuList {
