@@ -22,24 +22,28 @@ $pc: 960px;
 
 html {
     font-size: 62.5%;
-    height: 100%;
+    height: 100vw;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     min-width: 320px;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 0;
     background: #ffffff;
     font-family: 'M PLUS 1p', sans-serif;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    overflow-x: hidden;
 
     &.is-open {
         position: fixed;
     }
+}
+
+.body-wrapper {
+    overflow-x: hidden;
 }
 
 img {
